@@ -1,0 +1,19 @@
+server:
+  port: 1111
+spring:
+# ===================redis相關配置=================
+  redis:
+    database: 0
+    host: 192.168.111.147
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        # 連接池最大連接數(負值表示沒有限制)預設:8
+        max-active: 8
+        # 連接池最大阻塞等待時間(負值表示沒有限制)ms
+        max-wait: -1
+        # 連接池最小空閒連接數，預設值:8
+        max-idle: 8
+        # 連接池最小空閒連接數，預設值:0
+        min-idle: 0
